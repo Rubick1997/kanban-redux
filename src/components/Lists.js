@@ -1,11 +1,11 @@
 import React from 'react';
-import List from './List';
+import ListsContainer from '../containers/ListsContainer';
 
 const Lists = ({ lists = [] }) => {
   return (
     <section className="Lists">
-      {lists.map((list) => (
-        <List />
+      {lists.map((listId) => (
+        <ListsContainer listId = {listId} />
       ))}
     </section>
   );
